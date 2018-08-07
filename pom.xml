@@ -35,13 +35,21 @@
   	</dependency>
   	
   	<!-- [ERROR] java.lang.NoClassDefFoundError: com/google/inject/Injector -->
-<!--   	<dependency>
+  	<!-- Google Guice Core Library  -->
+ 	<dependency>
 	    <groupId>com.google.inject</groupId>
 	    <artifactId>guice</artifactId>
 	    <version>4.1.0</version>
 	    <classifier>no_aop</classifier>
 	    <scope>test</scope>
-	 </dependency> -->
+	 </dependency>
+	<!-- Guava is a suite of core and expanded libraries that include utility classes, google's collections, io classes, and much much more. -->
+	<!-- java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkState -->
+	 <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
   	
   	  <!-- selenium -->
 	  <dependency>
@@ -49,11 +57,11 @@
 			    <artifactId>selenium-server</artifactId>
 			    <version>3.11.0</version>
 	</dependency>
-	<dependency>
+ 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-java</artifactId>
 	    <version>3.11.0</version>
-	</dependency>
+	</dependency> 
 	
   	<!-- browser driver -->
   	<!-- firefox -->
@@ -62,8 +70,7 @@
 	    <artifactId>selenium-firefox-driver</artifactId>
 	    <version>3.11.0</version>
 	</dependency>
-<!-- Chrome -->
-<!-- 
+	<!-- Chrome -->
 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-chrome-driver</artifactId>
@@ -74,7 +81,7 @@
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-ie-driver</artifactId>
 	    <version>3.11.0</version>
-	</dependency> -->
+	</dependency> 
 	  
   </dependencies>
   
