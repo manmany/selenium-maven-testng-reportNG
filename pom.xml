@@ -34,6 +34,15 @@
         </exclusions>
   	</dependency>
   	
+  	<!-- [ERROR] java.lang.NoClassDefFoundError: com/google/inject/Injector -->
+  	<dependency>
+	    <groupId>com.google.inject</groupId>
+	    <artifactId>guice</artifactId>
+	    <version>4.1.0</version>
+	    <classifier>no_aop</classifier>
+	    <scope>test</scope>
+	 </dependency>
+  	
   	  <!-- selenium -->
 	  <dependency>
 			    <groupId>org.seleniumhq.selenium</groupId>
