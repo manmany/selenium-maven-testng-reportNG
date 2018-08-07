@@ -35,13 +35,13 @@
   	</dependency>
   	
   	<!-- [ERROR] java.lang.NoClassDefFoundError: com/google/inject/Injector -->
-  	<dependency>
+<!--   	<dependency>
 	    <groupId>com.google.inject</groupId>
 	    <artifactId>guice</artifactId>
 	    <version>4.1.0</version>
 	    <classifier>no_aop</classifier>
 	    <scope>test</scope>
-	 </dependency>
+	 </dependency> -->
   	
   	  <!-- selenium -->
 	  <dependency>
@@ -62,18 +62,19 @@
 	    <artifactId>selenium-firefox-driver</artifactId>
 	    <version>3.11.0</version>
 	</dependency>
-	<!-- Chrome -->
+<!-- Chrome -->
+<!-- 
 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-chrome-driver</artifactId>
 	    <version>3.11.0</version>
 	</dependency>
-	<!-- ie -->
+
 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-ie-driver</artifactId>
 	    <version>3.11.0</version>
-	</dependency>
+	</dependency> -->
 	  
   </dependencies>
   
