@@ -9,6 +9,18 @@
   <description>selenium-maven-testng-reportNG</description>
   
   
+<dependencyManagement>
+    <dependencies>
+    	<!-- Guava is a suite of core and expanded libraries that include utility classes, google's collections, io classes, and much much more. -->
+		<!-- java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkState -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+  
   <dependencies>
 	
 	<!-- TestNG -->
@@ -43,13 +55,7 @@
 	    <classifier>no_aop</classifier>
 	    <scope>test</scope>
 	 </dependency>
-	<!-- Guava is a suite of core and expanded libraries that include utility classes, google's collections, io classes, and much much more. -->
-	<!-- java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkState -->
-	 <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>23.0</version>
-        </dependency>
+
   	
   	  <!-- selenium -->
 	  <dependency>
