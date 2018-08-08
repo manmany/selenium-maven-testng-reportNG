@@ -11,7 +11,9 @@ public class TestDemo {
 	public void TestDemo() {
 		String osType = System.getProperty("os.name");
 		if(osType.equalsIgnoreCase("Windows")) {
+			System.out.println("launching firefox browser");
 			System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
+			System.out.println("drivers/geckodriver.exe");
 		}
 
 		WebDriver driver = new FirefoxDriver();
