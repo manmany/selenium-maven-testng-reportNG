@@ -10,11 +10,11 @@ public class TestDemo {
 	@Test
 	public void TestDemo() {
 		String osType = System.getProperty("os.name");
-		if(osType.equalsIgnoreCase("Windows")) {
+		System.out.println("Testing on " + osType);
 			System.out.println("launching firefox browser");
 			System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
 			System.out.println("drivers/geckodriver.exe");
-		}
+
 
 		WebDriver driver = new FirefoxDriver();
 		String urlAddress = "http://www.baidu.com";
